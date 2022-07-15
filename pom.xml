@@ -30,7 +30,7 @@
                 <configuration>
                     <excludes>
                         <exclude>
-                            <groupId>org.projectlombok</groupId>
+                            <groupId>org.project-lombok</groupId>
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
@@ -41,6 +41,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
         </plugins>
@@ -48,8 +49,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/jidelson/sfg-pet-clinic.git</developerConnection>
-
-
+        <tag>HEAD</tag>
   </scm>
 
 </project>
